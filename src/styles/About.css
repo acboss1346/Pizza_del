@@ -56,3 +56,34 @@
 .aboutBottom p {
   font-family: 'Open Sans', sans-serif;
 }
+
+
+/* About.css */
+
+.about {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+/* Styles for screens with a maximum width of 768px (e.g., phones) */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .aboutTop {
+    height: 200px;
+    background-size: cover;
+  }
+
+  .aboutBottom h1 {
+    font-size: 24px;
+  }
+
+  .aboutBottom p {
+    font-size: 16px;
+  }
+}
+
