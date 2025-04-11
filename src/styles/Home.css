@@ -110,3 +110,29 @@
 .headerContainer button {
   font-family: 'Poppins', sans-serif;
 }
+
+
+@media (max-width: 768px) {
+  .headerContainer h1 {
+    font-size: 40px;
+  }
+
+  .headerContainer p {
+    font-size: 20px;
+  }
+
+  .headerContainer button {
+    width: 150px;
+    font-size: 16px;
+  }
+}
+/* Home.css */
+.home {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 10px;
+  }
+}
