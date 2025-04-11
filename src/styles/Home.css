@@ -111,6 +111,25 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.headerContainer h1 {
+  font-size: 2rem;
+}
+
+.headerContainer p {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .headerContainer h1 {
+    font-size: 3rem;
+  }
+
+  .headerContainer p {
+    font-size: 1.5rem;
+  }
+}
+
+
 
 @media (max-width: 768px) {
   .headerContainer h1 {
