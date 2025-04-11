@@ -86,4 +86,17 @@
     font-size: 16px;
   }
 }
+.aboutBottom p {
+  max-width: 90%;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .aboutBottom p {
+    font-size: 1.2rem;
+  }
+}
 
