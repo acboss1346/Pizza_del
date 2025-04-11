@@ -120,6 +120,27 @@ form button:hover {
   }
 }
 
+.contact {
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contact .leftSide,
+.contact .rightSide {
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+}
+
+
 
 .contact .rightSide h1 {
   font-family: 'Poppins', sans-serif;
