@@ -25,6 +25,19 @@
   color: #f8c630;
 }
 
+.footer {
+  height: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
