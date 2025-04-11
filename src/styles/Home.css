@@ -1,0 +1,112 @@
+.home {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation: fadeIn 1s ease-out;
+  transition: background 0.5s ease-in-out;
+}
+
+.headerContainer {
+  width: auto;
+  margin-left: 50px;
+}
+
+.headerContainer h1 {
+  font-size: 90px;
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: 600;
+  color: black;
+  line-height: 1.2;
+}
+
+.headerContainer p {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: lighter;
+  color: black;
+}
+
+.headerContainer button {
+  margin-top: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #121619;
+  height: 50px;
+  width: 180px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.headerContainer button:hover {
+  background-color: #07090a;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 650px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headerContainer {
+    margin-left: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121619;
+    color: white;
+  }
+
+  .headerContainer h1 {
+    font-size: 40px;
+    height: auto;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .headerContainer p {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  .headerContainer button {
+    background-color: white;
+    color: #121619;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .headerContainer button:hover {
+    background-color: rgb(225, 225, 225);
+    color: #121619;
+  }
+}
+
+
+
+.headerContainer h1 {
+  font-family: 'Playfair Display', serif;
+}
+.headerContainer p {
+  font-family: 'Open Sans', sans-serif;
+}
+.headerContainer button {
+  font-family: 'Poppins', sans-serif;
+}
