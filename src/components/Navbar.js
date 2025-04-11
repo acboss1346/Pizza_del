@@ -5,29 +5,28 @@ import ReorderIcon from "@material-ui/icons/Reorder";
 import "../styles/Navbar.css";
 
 function Navbar() {
-  const [openLinks, setOpenLinks] = useState(false);
+  const [showLinks, setShowLinks] = useState(false);
 
-  const toggleNavbar = () => {
-    setOpenLinks(!openLinks);
+  const handleToggle = () => {
+    setShowLinks(!showLinks);
   };
 
   return (
     <div className="navbar">
       <div className="leftSide">
-        <img src={Logo} alt="Pizza Logo" />
+        <img src={Logo} alt="logo" />
       </div>
 
-      <div className="rightSide">
-        <div className={`links ${openLinks ? "show" : ""}`}>
-          <Link to="/"> Home </Link>
-          <Link to="/menu"> Menu </Link>
-          <Link to="/about"> About </Link>
-          <Link to="/contact"> Contact </Link>
-        </div>
-        <button onClick={toggleNavbar} className="toggleButton">
-          <ReorderIcon />
-        </button>
+      <div className={`links ${showLinks ? "show" : ""}`}>
+        <Link to="/" onClick={() => setShowLinks(false)}>Home</Link>
+        <Link to="/menu" onClick={() => setShowLinks(false)}>Menu</Link>
+        <Link to="/about" onClick={() => setShowLinks(false)}>About</Link>
+        <Link to="/contact" onClick={() => setShowLinks(false)}>Contact</Link>
       </div>
+
+      <button className="toggleButton" onClick={handleToggle}>
+        <ReorderIcon />
+      </button>
     </div>
   );
 }
