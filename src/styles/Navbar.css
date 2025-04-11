@@ -25,14 +25,22 @@
 
 .navbar .rightSide {
   display: flex;
+  align-items: center;
   gap: 25px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 25px;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  font-family: 'Poppins', sans-serif;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -55,10 +63,52 @@
   transform-origin: left;
 }
 
-
-.navbar .rightSide {
-  font-family: 'Poppins', sans-serif;
+.toggleButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  display: none;
 }
-.navbar a {
-  font-family: 'Poppins', sans-serif;
+
+/* --- MOBILE STYLES --- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #121619;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    z-index: 999;
+    animation: slideDown 0.3s ease;
+  }
+
+  .navbar .links.show {
+    display: flex;
+  }
+
+  .toggleButton {
+    display: block;
+  }
+}
+
+/* Optional animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
